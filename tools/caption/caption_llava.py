@@ -253,7 +253,7 @@ def main(args):
     # ======================================================
     # 2. load model and prepare prompts
     # ======================================================
-    model_path = "liuhaotian/llava-v1.6-34b"
+    model_path = "liuhaotian/llava-v1.6-vicuna-7b"
     query = prompts[args.prompt]
     print(f"Prompt: {query}")
     conv = conv_templates["chatml_direct"].copy()

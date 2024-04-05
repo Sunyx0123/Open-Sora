@@ -7,7 +7,7 @@ from tqdm import tqdm
 
 from opensora.utils.misc import get_timestamp
 
-from .utils import check_mp4_integrity, clone_folder_structure, iterate_files, split_video
+from utils import check_mp4_integrity, clone_folder_structure, iterate_files, split_video
 
 # config
 target_fps = 30  # int
@@ -79,8 +79,8 @@ def scene_detect():
                 yyy_scene-1.mp4
     """
     # TODO: specify your dataset root
-    root_src = f"./data/your_dataset/raw_videos"
-    root_dst = f"./data/your_dataset/clips"
+    root_src = f"./data/test_dataset/raw_videos"
+    root_dst = f"./data/test_dataset/clips"
 
     process_folder(root_src, root_dst)
 
@@ -118,8 +118,8 @@ def scene_detect_mp():
                     yyy_scene-1.mp4
     """
     # TODO: specify your dataset root
-    root_src = f"./data/your_dataset/raw_videos"
-    root_dst = f"./data/your_dataset/clips"
+    root_src = f"./data/test_dataset/raw_videos"
+    root_dst = f"./data/test_dataset/clips"
 
     # TODO: specify your splits
     splits = ["split_0", "split_1"]
